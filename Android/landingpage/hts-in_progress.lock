@@ -1,0 +1,7 @@
+Mirror in progress since Tue, 28 May 2024 17:56:25 .. please wait!
+winhttrack https://www.android.com -O "Android/Android" -%v 
+To pause the engine: create an empty file named 'hts-stop.lock'
+PID=2786
+UID=0
+GID=0
+START=1716933385
