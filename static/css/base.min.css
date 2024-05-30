@@ -1,0 +1,199 @@
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+main:after {
+    content: "loaded";
+    display: none
+}
+
+main .animation-engine--is-animating {
+    will-change: transform,opacity
+}
+
+main>article[id] {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column
+}
+
+footer,main {
+    opacity: 1
+}
+
+body,html {
+    font-family: var(--font-family-base);
+    margin: 0;
+    min-height: 100vh
+}
+
+body:after {
+    content: "small";
+    display: none
+}
+
+@media only screen and (min-width: 768px) {
+    body:after {
+        content:"medium"
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    body:after {
+        content:"large"
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    body:after {
+        content:"xl"
+    }
+}
+
+.icon {
+    fill: currentColor;
+    height: 24px;
+    margin-left: 12px;
+    width: 24px;
+    z-index: 1
+}
+
+.go-back {
+    border: 1px solid #333;
+    border-radius: 20px;
+    color: #333;
+    display: inline-block;
+    left: 16px;
+    padding: 16px;
+    position: fixed;
+    text-decoration: none;
+    top: 16px;
+    z-index: 9999
+}
+
+.header-default--transparent .header-default__primary-item {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0)
+}
+
+.header-default--transparent .header-default__logo-icon {
+    --wipe-progress: 100%;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0)
+}
+
+.android-header--transparent .android-header__primary-item {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0)
+}
+
+.android-header--transparent .android-header__logo-icon {
+    --wipe-progress: 100%;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0)
+}
+
+main {
+    opacity: 1
+}
+
+.article--with-background {
+    position: relative
+}
+
+.android-header--transparent .search-default,.header-default--transparent .search-default {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0)
+}
+
+.story-modal-disable-scroll,html.android-global-disable-scroll,html.global-disable-scroll {
+    -ms-scroll-chaining: none;
+    height: 100vh;
+    overflow: hidden;
+    overscroll-behavior: none;
+    -ms-touch-action: none;
+    touch-action: none;
+    width: 100%
+}
+
+.text-center {
+    text-align: center
+}
+
+.hidden {
+    display: none
+}
+
+.logo-android__logo-icon {
+    color: #000
+}
+
+.logo-android__logo-icon--white {
+    color: #fff
+}
+
+.logo-android__andy-icon {
+    fill: #3dda84
+}
+
+.logo-android__andy-icon--white {
+    fill: #fff
+}
+
+.images--disable-rounded-corners cloud-image,.images--disable-rounded-corners img {
+    border-radius: 0
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+    outline: rgba(0,0,0,0)
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    border: 0;
+    height: auto;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px
+}
+
+.visually-hidden.focusable:active,.visually-hidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    white-space: inherit;
+    width: auto
+}
+
+.rounded {
+    border-radius: 24px;
+    overflow: hidden
+}
+
+@media only screen and (min-width: 768px) {
+    .rounded {
+        border-radius:40px
+    }
+}
+
+@media screen and (inverted-colors:inverted) {
+    img,video {
+        -webkit-filter: invert(1);
+        filter: invert(1)
+    }
+}
